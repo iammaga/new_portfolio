@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  font-family: sans-serif monospace;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#bg-img {
+  background-image: url(/img/poster.jpg);
+}
+
+li {
+  list-style-type: none;
+  font-family: sans-serif;
+}
+
+.skills {
+  width: 100%;
+  margin: 60px auto;
+  color: #fff;
+}
+
+.skills li {
+  margin: 20px 0;
+}
+
+.bar {
+  display: block;
+  height: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3;
+}
+
+.html {
+  background-color: #dd4b25;
+}
+
+.css {
+  background-color: #214ce5;
+}
+
+.tailwindcss {
+  background-color: #38bdf8;
+}
+
+.php {
+  background-color: #4b578b;
+}
+
+.javascript {
+  background-color: #f7df1e;
+}
+
+.jquery {
+  background-color: #1169ae;
+}
+
+.react {
+  background-color: #58b3e8;
+}
+
+.vue {
+  background-color: #36ad79;
+}
+
+.laravel {
+  background-color: #f22b1e;
+}
+
+.mysql {
+  background-color: #dd6b00;
+}
+
+.opencart {
+  background-color: #27ade9;
+}
+
+.bar span {
+  height: 2px;
+  float: left;
+  background-color: #2187e7;
+}
+
+.html {
+  width: 100%;
+  animation: html 2s;
+}
+
+.css {
+  width: 100%;
+  animation: css 2s;
+}
+
+.tailwindcss {
+  width: 90%;
+  animation: tailwindcss 2s;
+  -webkit-animation: tailwindcss 2s;
+}
+
+.javascript {
+  width: 90%;
+  animation: javascript 2s;
+}
+
+.php {
+  width: 90%;
+  animation: php 2s;
+  -webkit-animation: php 2s;
+}
+
+.jquery {
+  width: 70%;
+  animation: jquery 2s;
+  -webkit-animation: jquery 2s;
+}
+
+.react {
+  width: 70%;
+  animation: react 2s;
+  -webkit-animation: react 2s;
+}
+
+.vue {
+  width: 70%;
+  animation: vue 2s;
+  -webkit-animation: vue 2s;
+}
+
+.laravel {
+  width: 70%;
+  animation: laravel 2s;
+  -webkit-animation: laravel 2s;
+}
+
+.mysql {
+  width: 80%;
+  animation: mysql 2s;
+  -webkit-animation: mysql 2s;
+}
+
+.opencart {
+  width: 80%;
+  animation: opencart 2s;
+  -webkit-animation: opencart 2s;
+}
+
+.btn-shine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 48px;
+  color: #4d4d4d;
+  background: linear-gradient(to right, #fff 0, #4d4d4d 10%, #fff 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  50% {
+    background-position: 190px;
+  }
+  100% {
+    background-position: 380px;
+  }
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes tailwindcss {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes php {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes jquery {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes vue {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes laravel {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes mysql {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes opencart {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+.string {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  animation: move 4s infinite;
+}
+
+.greeting {
+  position: relative;
+  top: 8.6vmin;
+  animation: white-out 5s infinite;
+}
+
+.closure::after {
+  content: "";
+  position: absolute;
+  height: 25vmin;
+  width: 45vmin;
+  background: #212836;
+  transform: translate(-45vmin, -24.5vmin);
+}
+
+.closure::before {
+  content: "";
+  position: absolute;
+  height: 25vmin;
+  width: 40vmin;
+  background: #212836;
+  transform: translate(-40vmin, 5vmin);
+}
+
+.en {
+  color: #fa8231;
+}
+
+.ru {
+  color: white;
+}
+
+.de {
+  color: #c678dd;
+}
+
+@keyframes move {
+  25% {
+    transform: translatey(-4.5vmin);
+    opacity: 1;
+    -webkit-transform: translatey(-4.5vmin);
+    -moz-transform: translatey(-4.5vmin);
+    -ms-transform: translatey(-4.5vmin);
+    -o-transform: translatey(-4.5vmin);
+  }
+  50% {
+    transform: translatey(-8vmin);
+    -webkit-transform: translatey(-8vmin);
+    -moz-transform: translatey(-8vmin);
+    -ms-transform: translatey(-8vmin);
+    -o-transform: translatey(-8vmin);
+  }
+  75% {
+    transform: translatey(-12vmin);
+    -webkit-transform: translatey(-12vmin);
+    -moz-transform: translatey(-12vmin);
+    -ms-transform: translatey(-12vmin);
+    -o-transform: translatey(-12vmin);
+  }
+  100% {
+    transform: translatey(-16vmin);
+    -webkit-transform: translatey(-16vmin);
+    -moz-transform: translatey(-16vmin);
+    -ms-transform: translatey(-16vmin);
+    -o-transform: translatey(-16vmin);
+  }
+}
+
+#menu {
+  background: rgba(255, 255, 255, 0.42);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
+  border: 1px solid rgba(255, 255, 255, 0.51);
+}
+
+.blink-2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  animation: blur 3s ease-out infinite;
+  text-shadow: 0 0 5px #abc, 0 0 7px #abc;
+  -webkit-animation: blur 3s ease-out infinite;
+}
+
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff;
+  }
+}
+
+#bg-img {
+  transition: 3s;
+}
+
+#top-laptop {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(11.1px);
+}

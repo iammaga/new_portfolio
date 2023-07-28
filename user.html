@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/x-icon" href="/img/portfolio.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="overflow-y-hidden select-none">
+  <div class="container bg-[#212836] border-8 border-black rounded-t-3xl ml-auto mr-auto mt-8 h-[88%] sm:w-5/6 md:w-5/6">
+    <div class="bg-[#1B212C] text-white border-t-8 border-l-8 border-r-8 border-black flex justify-between">
+      <div>
+        <i class="fa-solid fa-circle-xmark text-red-600 ml-2 mt-2"></i>
+        <i class="fa-solid fa-circle text-yellow-400 ml-1 mt-2"></i>
+        <i class="fa-solid fa-circle text-lime-400 ml-1 mt-2"></i>
+      </div>
+      <div>
+        <div
+          class="flex flex-col-reverse text-center bg-black text-black border-b-[24px] border-black rounded-b-2xl mb-2">
+        </div>
+        <h1 class="text-center mb-2">Portfolio - Visual Studio Code</h1>
+      </div>
+      <div class="flex items-start mt-1">
+        <i class="fa-solid fa-battery-full text-xl"></i>
+        <h1 id="timeNow" class="text-end ml-2 mr-2">date</h1>
+      </div>
+    </div>
+    <div class="border-l-8 border-r-8 border-b-[50px] border-black min-h-[91%]">
+      <div class="flex h-[74vh] w-full bg-[#212836] w-100">
+        <div class="w-100 block w-12 h-100 h-auto border-r-2 border-[#212836] mr-4">
+          <a onclick="openFolders()">
+            <i class="fa-solid fa-copy text-white ml-4 text-3xl"></i>
+          </a>
+          <a href="/">
+            <i class="fa-solid fa-user mt-4 text-white ml-4 text-3xl"></i>
+          </a>
+        </div>
+        <div id="folders" class="text-white w-1/5 bg-[#1B212C] pl-4 hidden">
+          Навыки
+          <!-- <i class="fa-solid fa-chevron-down"></i> -->
+          <div class="bg-[#1B212C] none">
+            <!-- <i class="fa-solid fa-chevron-right"></i> -->
+            <!-- <i class="fa-solid fa-browser"></i> -->
+            <div onclick="openFrontendFolder()">
+              <span>
+                <i class="fa-solid fa-chevron-down mt-2"></i>
+                <i class="fa-solid fa-folder mt-2"></i> Front-end
+              </span>
+            </div>
+            <div id="frontend" class="ml-8 none">
+              <p>
+                <i class="fa-brands fa-html5"></i>
+                HTML
+              </p>
+              <div class="none" onclick="openCssFolder()">
+                <p>
+                  <i class="fa-solid fa-chevron-down mt-2"></i>
+                  <i class="fa-brands fa-css3-alt"></i>
+                  CSS
+                </p>
+              </div>
+              <div id="css" class="ml-8">
+                <p>
+                  <i class="fa-brands fa-react"></i>
+                  Tailwindcss
+                </p>
+                <p>
+                  <i class="fa-brands fa-bootstrap"></i>
+                  Bootstrap
+                </p>
+              </div>
+              <div class="none" onclick="openJsFolder()">
+                <p>
+                  <i class="fa-solid fa-chevron-down mt-2"></i>
+                  <i class="fa-brands fa-js mt-2"></i>
+                  JavaScript
+                </p>
+              </div>
+              <div id="js" class="ml-8">
+                <p>
+                  <i class="fa-brands fa-react"></i>
+                  React
+                </p>
+                <p>
+                  <i class="fa-brands fa-vuejs"></i>
+                  Vue
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-[#1B212C] none" onclick="openBackendFolder()">
+            <!-- <i class="fa-solid fa-chevron-right"></i> -->
+            <i class="fa-solid fa-chevron-down mt-2"></i>
+            <i class="fa-solid fa-folder mt-2"></i>
+            <!-- <i class="fa-sharp fa-solid fa-gear-code"></i> -->
+            Back-end
+          </div>
+          <div id="backend" class="ml-8 none" onclick="openPhpFolder()">
+            <div class="none">
+              <p>
+                <i class="fa-solid fa-chevron-down mt-2"></i>
+                <i class="fa-brands fa-php"></i>
+                Php
+              </p>
+            </div>
+            <div id="php" class="ml-8">
+              <p>
+                <i class="fa-brands fa-laravel"></i>
+                Laravel
+              </p>
+            </div>
+          </div>
+          <div class="bg-[#1B212C] none" onclick="openDatabaseFolder()">
+            <!-- <i class="fa-solid fa-chevron-right"></i> -->
+            <i class="fa-solid fa-chevron-down mt-2"></i>
+            <i class="fa-solid fa-folder mt-2"></i>
+            <!-- <i class="fa-solid fa-database"></i> -->
+            Database
+            <div id="database" class="ml-8">
+              <p>
+                <i class="fa-solid fa-database"></i>
+                MySql
+              </p>
+            </div>
+          </div>
+          <div class="bg-[#1B212C] my-0.5 ml-4">
+            <p class="flex items-center">
+              <i class="fa-sharp fa-solid fa-terminal"></i>
+              Terminal
+            </p>
+          </div>
+          <div class="bg-[#1B212C] my-0.5 ml-4 flex items-center">
+            <p class="flex items-center">
+              <i class="fa-brands fa-node-js mr-2"></i>
+              Node js
+            </p>
+          </div>
+          <div class="bg-[#1B212C] my-0.5 ml-4 flex items-center">
+            <p class="flex items-center">
+              <i class="fa-brands fa-linux mr-2"></i>
+              Linux
+            </p>
+          </div>
+          <div class="bg-[#1B212C] my-0.5 ml-4 flex items-center">
+            <p class="flex items-center">
+              <img src="/img/docker.svg" alt="" width="24px" class="pr-2">
+              Docker
+            </p>
+          </div>
+          <div class="bg-[#1B212C] my-0.5 ml-4 flex items-center">
+            <p class="flex items-center">
+              <img src="/img/composer.svg" alt="" width="24px" class="pr-2">
+              Composer
+            </p>
+          </div>
+          <div class="bg-[#1B212C] my-0.5 ml-4 flex items-center">
+            <p class="flex items-center">
+              <img src="/img/npm.svg" alt="" width="24px" class="pr-2">
+              Npm
+            </p>
+          </div>
+          <div class="bg-[#1B212C] my-0.5 ml-4 flex items-center">
+            <p class="flex items-center">
+              <i class="fa-brands fa-markdown mr-2"></i>
+              README
+            </p>
+          </div>
+        </div>
+        <div class="flex h-full text-white text-3xl text-center w-full px-8 sm:block lg:flex">
+          <div class="about">
+            <div class="flex items-center justify-center mt-16">
+              <img src="/img/profile-pic.jpg" alt="logo" class="rounded-full w-2/4">
+            </div>
+            <span class="text-white text-lg font-bold mb-4 text-gray-500 px-8 my-16">
+              My name is Muhammad, I am <span id="myAge"></span> years old, my hobby is programming. In the future I want to become a full stack.
+            </span>
+            <div class="mt-8 text-start">
+              <div class="flex items-center justify-center">
+                <p class="text-lg text-start ml-1 p-1">FULLNAME: </p>
+                <p class="text-lg text-start ml-1 p-1"> Muhammad Zikirzoda Sayfullo</p>
+              </div>
+              <div class="flex items-center justify-center">
+                <p class="text-lg text-start ml-1 p-1">BIRTH DATE: </p>
+                <p class="text-lg text-start ml-1 p-1"> November 08, 2001</p>
+              </div>
+              <div class="flex items-center justify-center">
+                <p class="text-lg text-start ml-1 p-1">JOB: </p>
+                <p class="text-lg text-start ml-1 p-1"> Full-Stack Developer</p>
+              </div>
+              <div class="flex items-center justify-center">
+                <p class="text-lg text-start ml-1 p-1">EMAIL: </p>
+                <p class="text-lg text-start ml-1 p-1"> muxammad.zikirzoda@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="h-auto w-full sm:w-4/6 lg:w-5/6">
+            <div class="skills">
+              <h1>My Skills</h1>
+              <li>
+                <h3 class="text-lg">HTML</h3>
+                <span class="html bar">
+                  <span class="html"></span>
+                </span>
+              </li>
+              <li>
+                <h3 class="text-lg">CSS</h3>
+                <span class="css bar">
+                  <span class="css"></span>
+                </span>
+              </li>
+              <li>
+                <h3 class="text-lg">TAILWINDCSS</h3>
+                <span class="tailwindcss bar">
+                  <span class="tailwindcss"></span>
+                </span>
+              </li>
+              <li>
+                <h3 class="text-lg">JAVASCRIPT</h3>
+                <span class="javascript bar">
+                  <span class="javascript"></span>
+                </span>
+              </li>
+              <li>
+                <h3 class="text-lg">PHP</h3>
+                <span class="php bar">
+                  <span class="php"></span>
+                </span>
+              </li>
+              <li>
+                <h3 class="text-lg">JQUERY</h3>
+                <span class="jquery bar">
+                  <span class="jquery"></span>
+                </span>
+              </li>
+              <li>
+                <h3 class="text-lg">REACT</h3>
+                <span class="react bar">
+                  <span class="react"></span>
+                </span>
+              </li>
+              <li>
+                <h3 class="text-lg">VUE</h3>
+                <span class="vue bar">
+                  <span class="vue"></span>
+                </span>
+              </li>
+              <li>
+                <h3 class="text-lg">LARAVEL</h3>
+                <span class="laravel bar">
+                  <span class="laravel"></span>
+                </span>
+              </li>
+              <li>
+                <h3 class="text-lg">MYSQL</h3>
+                <span class="mysql bar">
+                  <span class="mysql"></span>
+                </span>
+              </li>
+              <li>
+                <h3 class="text-lg">OPENCART</h3>
+                <span class="opencart bar">
+                  <span class="opencart"></span>
+                </span>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="bg-[#5E5F63] bg-gradient-to-b from-[#5E5F63] to-gray-900 border-[#5E5F63] w-100 ml-16 mr-16 h-14 rounded-b-full md:mx-8 sm:mx-16">
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
