@@ -106,4 +106,4 @@ function click() {
 setTimeout(function () {
   document.getElementById("bg-img").style.display = "block";
   document.getElementById("start").style.display = "none";
-}, 2800); // 2800
+}, 0); // 2800

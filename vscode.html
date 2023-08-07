@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="/img/portfolio.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" type="image/x-icon" href="/img/portfolio.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body class="overflow-y-hidden select-none">
-  <div
-    class="container bg-[#212836] border-8 border-black rounded-t-3xl ml-auto mr-auto mt-8 h-[88%] sm:w-5/6 md:w-5/6">
-    <div class="">
-      <div id="bg-img" class="">
-        <div
-          id="top-laptop"
-          class="bg-transparent rounded-t-none bg-[#212836] text-white border-t-8 border-l-8 border-r-8 border-black flex justify-between items-start rounded-t-2xl"
-        >
-          <div class="flex items-center justify-center">
-            <i class="fa-solid fa-circle-xmark text-red-600 ml-2 mt-2"></i>
-            <i class="fa-solid fa-circle text-yellow-400 ml-1 mt-2"></i>
-            <i class="fa-solid fa-circle text-lime-400 ml-1 mt-2"></i>
+  <body class="overflow-y-hidden select-none">
+    <div
+      class="container bg-black border-8 border-black rounded-t-3xl ml-auto mr-auto mt-8 h-[88%] sm:w-5/6 md:w-5/6"
+    >
+      <div class="">
+        <div id="bg-img" class="hidden rounded-t-2xl">
+          <div
+            class="text-white border-t-8 border-l-8 border-r-8 border-black flex justify-between items-start rounded-t-2xl bg-[#212836]"
+          >
+            <div class="flex items-center justify-center">
+              <i
+                id=""
+                class="fa-solid fa-circle-xmark text-red-600 ml-2 mt-2"
+              ></i>
+              <i class="fa-solid fa-circle text-yellow-400 ml-1 mt-2"></i>
+              <i class="fa-solid fa-circle text-lime-400 ml-1 mt-2"></i>
+            </div>
+            <div class="w-52">
+              <div
+                class="flex flex-col-reverse text-center bg-black text-black border-b-[24px] border-black rounded-b-2xl border-t-8 border-l-8 border-r-8 border-black"
+              ></div>
+            </div>
+            <div class="flex items-start mt-1">
+              <i class="fa-solid fa-battery-full text-xl"></i>
+              <h1 id="timeNow" class="text-end ml-2 mr-2">date</h1>
+            </div>
           </div>
-          <div class="w-52">
-            <div
-              class="flex flex-col-reverse text-center bg-black text-black border-b-[24px] border-black rounded-b-2xl border-t-8 border-l-8 border-r-8 border-black"
-            ></div>
-            <h1 class="w-max text-center mb-2">Portfolio - Visual Studio Code</h1>
-          </div>
-          <div class="flex items-start mt-1">
-            <i class="fa-solid fa-battery-full text-xl"></i>
-            <h1 id="timeNow" class="text-end ml-2 mr-2">date</h1>
-          </div>
-        </div>
-        <!-- <div id="vscode"
+          <div id="top-laptop"></div>
+          <!-- <div id="vscode"
           class="bg-[#1B212C] text-white border-t-8 border-l-8 border-r-8 border-black flex justify-between">
           <div>
             <i class="fa-solid fa-circle-xmark text-red-600 ml-2 mt-2"></i>
@@ -58,204 +67,268 @@
             <h1 id="timeNow" class="text-end ml-2 mr-2">date</h1>
           </div>
         </div> -->
-        <div class="border-l-8 border-r-8 border-b-[65px] border-black min-h-[91%]">
-          <div class="flex h-[74vh] w-full bg-[#212836] w-100">
-            <div class="w-100 block w-12 h-100 h-auto border-r-2 border-[#212836] mr-4">
-              <a onclick="openFolders()">
-                <i class="fa-solid fa-copy text-white ml-4 text-3xl"></i>
-              </a>
-              <a href="/user.html">
-                <i class="fa-solid fa-user mt-4 text-white ml-4 text-3xl"></i>
-              </a>
-            </div>
-            <div id="folders" class="text-white w-1/5 bg-[#1B212C] pl-4 hidden">
-              Навыки
-              <!-- <i class="fa-solid fa-chevron-down"></i> -->
-              <div class="bg-[#1B212C] none">
-                <!-- <i class="fa-solid fa-chevron-right"></i> -->
-                <!-- <i class="fa-solid fa-browser"></i> -->
-                <div onclick="openFrontendFolder()">
-                  <span>
-                    <i class="fa-solid fa-chevron-down mt-2"></i>
-                    <i class="fa-solid fa-folder mt-2"></i> Front-end
-                  </span>
+          <div
+            class="border-l-8 border-r-8 border-b-[52px] border-black min-h-[91%]"
+          >
+            <div class="flex h-[77vh] w-full bg-[#212836] w-100">
+              <div
+                class="w-100 block w-12 h-100 h-auto border-r-2 border-[#212836] mr-4 mt-4"
+              >
+                <a onclick="openFolders()">
+                  <i class="fa-solid fa-copy text-white ml-4 text-3xl"></i>
+                </a>
+                <a href="/user.html">
+                  <i class="fa-solid fa-user mt-4 text-white ml-4 text-3xl"></i>
+                </a>
+              </div>
+              <div
+                id="folders"
+                class="text-white w-1/5 bg-[#1B212C] pl-4 hidden"
+              >
+                Навыки
+                <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                <div class="bg-[#1B212C] none">
+                  <!-- <i class="fa-solid fa-chevron-right"></i> -->
+                  <!-- <i class="fa-solid fa-browser"></i> -->
+                  <div onclick="openFrontendFolder()">
+                    <span>
+                      <i class="fa-solid fa-chevron-down mt-2"></i>
+                      <i class="fa-solid fa-folder mt-2"></i> Front-end
+                    </span>
+                  </div>
+                  <div id="frontend" class="ml-8 none">
+                    <p>
+                      <i class="fa-brands fa-html5"></i>
+                      HTML
+                    </p>
+                    <div class="none" onclick="openCssFolder()">
+                      <p>
+                        <i class="fa-solid fa-chevron-down mt-2"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        CSS
+                      </p>
+                    </div>
+                    <div id="css" class="ml-8">
+                      <p class="flex items-center">
+                        <img
+                          src="/img/tailwindcss.svg"
+                          alt=""
+                          width="18px"
+                          class="mr-1"
+                        />
+                        Tailwindcss
+                      </p>
+                      <p>
+                        <i class="fa-brands fa-bootstrap"></i>
+                        Bootstrap
+                      </p>
+                    </div>
+                    <div class="none" onclick="openJsFolder()">
+                      <p>
+                        <i class="fa-solid fa-chevron-down mt-2"></i>
+                        <i class="fa-brands fa-js mt-2"></i>
+                        JavaScript
+                      </p>
+                    </div>
+                    <div id="js" class="ml-8">
+                      <p>
+                        <i class="fa-brands fa-react"></i>
+                        React
+                      </p>
+                      <p>
+                        <i class="fa-brands fa-vuejs"></i>
+                        Vue
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div id="frontend" class="ml-8 none">
-                  <p>
-                    <i class="fa-brands fa-html5"></i>
-                    HTML
-                  </p>
-                  <div class="none" onclick="openCssFolder()">
+                <div class="bg-[#1B212C] none" onclick="openBackendFolder()">
+                  <!-- <i class="fa-solid fa-chevron-right"></i> -->
+                  <i class="fa-solid fa-chevron-down mt-2"></i>
+                  <i class="fa-solid fa-folder mt-2"></i>
+                  <!-- <i class="fa-sharp fa-solid fa-gear-code"></i> -->
+                  Back-end
+                </div>
+                <div id="backend" class="ml-8 none" onclick="openPhpFolder()">
+                  <div class="none">
                     <p>
                       <i class="fa-solid fa-chevron-down mt-2"></i>
-                      <i class="fa-brands fa-css3-alt"></i>
-                      CSS
+                      <i class="fa-brands fa-php"></i>
+                      Php
                     </p>
                   </div>
-                  <div id="css" class="ml-8">
-                    <p class="flex items-center">
-                      <img src="/img/tailwindcss.svg" alt="" width="18px" class="mr-1">
-                      Tailwindcss
-                    </p>
+                  <div id="php" class="ml-8">
                     <p>
-                      <i class="fa-brands fa-bootstrap"></i>
-                      Bootstrap
-                    </p>
-                  </div>
-                  <div class="none" onclick="openJsFolder()">
-                    <p>
-                      <i class="fa-solid fa-chevron-down mt-2"></i>
-                      <i class="fa-brands fa-js mt-2"></i>
-                      JavaScript
-                    </p>
-                  </div>
-                  <div id="js" class="ml-8">
-                    <p>
-                      <i class="fa-brands fa-react"></i>
-                      React
-                    </p>
-                    <p>
-                      <i class="fa-brands fa-vuejs"></i>
-                      Vue
+                      <i class="fa-brands fa-laravel"></i>
+                      Laravel
                     </p>
                   </div>
                 </div>
-              </div>
-              <div class="bg-[#1B212C] none" onclick="openBackendFolder()">
-                <!-- <i class="fa-solid fa-chevron-right"></i> -->
-                <i class="fa-solid fa-chevron-down mt-2"></i>
-                <i class="fa-solid fa-folder mt-2"></i>
-                <!-- <i class="fa-sharp fa-solid fa-gear-code"></i> -->
-                Back-end
-              </div>
-              <div id="backend" class="ml-8 none" onclick="openPhpFolder()">
-                <div class="none">
-                  <p>
-                    <i class="fa-solid fa-chevron-down mt-2"></i>
-                    <i class="fa-brands fa-php"></i>
-                    Php
+                <div class="bg-[#1B212C] none" onclick="openDatabaseFolder()">
+                  <!-- <i class="fa-solid fa-chevron-right"></i> -->
+                  <i class="fa-solid fa-chevron-down mt-2"></i>
+                  <i class="fa-solid fa-folder mt-2"></i>
+                  <!-- <i class="fa-solid fa-database"></i> -->
+                  Database
+                  <div id="database" class="ml-8">
+                    <p>
+                      <i class="fa-solid fa-database"></i>
+                      MySql
+                    </p>
+                  </div>
+                </div>
+                <div class="bg-[#1B212C] my-0.5 ml-4">
+                  <p class="flex items-center">
+                    <i class="fa-sharp fa-solid fa-terminal"></i>
+                    Terminal
                   </p>
                 </div>
-                <div id="php" class="ml-8">
-                  <p>
-                    <i class="fa-brands fa-laravel"></i>
-                    Laravel
+                <div class="bg-[#1B212C] my-0.5 ml-4 flex items-center">
+                  <p class="flex items-center">
+                    <i class="fa-brands fa-node-js mr-2"></i>
+                    Node js
+                  </p>
+                </div>
+                <div class="bg-[#1B212C] my-0.5 ml-4 flex items-center">
+                  <p class="flex items-center">
+                    <i class="fa-brands fa-linux mr-2"></i>
+                    Linux
+                  </p>
+                </div>
+                <div class="bg-[#1B212C] my-0.5 ml-4 flex items-center">
+                  <p class="flex items-center">
+                    <img
+                      src="/img/docker.svg"
+                      alt=""
+                      width="24px"
+                      class="pr-2"
+                    />
+                    Docker
+                  </p>
+                </div>
+                <div class="bg-[#1B212C] my-0.5 ml-4 flex items-center">
+                  <p class="flex items-center">
+                    <img
+                      src="/img/composer.svg"
+                      alt=""
+                      width="24px"
+                      class="pr-2"
+                    />
+                    Composer
+                  </p>
+                </div>
+                <div class="bg-[#1B212C] my-0.5 ml-4 flex items-center">
+                  <p class="flex items-center">
+                    <img src="/img/npm.svg" alt="" width="24px" class="pr-2" />
+                    Npm
+                  </p>
+                </div>
+                <div class="bg-[#1B212C] my-0.5 ml-4 flex items-center">
+                  <p class="flex items-center">
+                    <i class="fa-brands fa-markdown mr-2"></i>
+                    README
                   </p>
                 </div>
               </div>
-              <div class="bg-[#1B212C] none" onclick="openDatabaseFolder()">
-                <!-- <i class="fa-solid fa-chevron-right"></i> -->
-                <i class="fa-solid fa-chevron-down mt-2"></i>
-                <i class="fa-solid fa-folder mt-2"></i>
-                <!-- <i class="fa-solid fa-database"></i> -->
-                Database
-                <div id="database" class="ml-8">
-                  <p>
-                    <i class="fa-solid fa-database"></i>
-                    MySql
-                  </p>
-                </div>
-              </div>
-              <div class="bg-[#1B212C] my-0.5 ml-4">
-                <p class="flex items-center">
-                  <i class="fa-sharp fa-solid fa-terminal"></i>
-                  Terminal
-                </p>
-              </div>
-              <div class="bg-[#1B212C] my-0.5 ml-4 flex items-center">
-                <p class="flex items-center">
-                  <i class="fa-brands fa-node-js mr-2"></i>
-                  Node js
-                </p>
-              </div>
-              <div class="bg-[#1B212C] my-0.5 ml-4 flex items-center">
-                <p class="flex items-center">
-                  <i class="fa-brands fa-linux mr-2"></i>
-                  Linux
-                </p>
-              </div>
-              <div class="bg-[#1B212C] my-0.5 ml-4 flex items-center">
-                <p class="flex items-center">
-                  <img src="/img/docker.svg" alt="" width="24px" class="pr-2">
-                  Docker
-                </p>
-              </div>
-              <div class="bg-[#1B212C] my-0.5 ml-4 flex items-center">
-                <p class="flex items-center">
-                  <img src="/img/composer.svg" alt="" width="24px" class="pr-2">
-                  Composer
-                </p>
-              </div>
-              <div class="bg-[#1B212C] my-0.5 ml-4 flex items-center">
-                <p class="flex items-center">
-                  <img src="/img/npm.svg" alt="" width="24px" class="pr-2">
-                  Npm
-                </p>
-              </div>
-              <div class="bg-[#1B212C] my-0.5 ml-4 flex items-center">
-                <p class="flex items-center">
-                  <i class="fa-brands fa-markdown mr-2"></i>
-                  README
-                </p>
-              </div>
-            </div>
-            <div class="block h-full text-white text-3xl text-center w-full px-8">
-              <div class="about h-full flex items-center justify-center pr-24">
-                <h3
-                  class="text-8xl items-center text-[#202020] uppercase tracking-[-2px] shadow-[0_20px_70px_rgba(0,0,0,0.55)] border-solid border-[#adadad]">
-                  <!-- <a href="https://usecheck.com/" class="btn-shine text-8xl" target="_blank">Hello!</a> -->
-                  <!-- <span
+              <div
+                class="block h-full text-white text-3xl text-center w-full px-8"
+              >
+                <div
+                  class="about h-full flex items-center justify-center pr-24"
+                >
+                  <h3
+                    class="text-8xl items-center text-[#202020] uppercase tracking-[-2px] shadow-[0_20px_70px_rgba(0,0,0,0.55)] border-solid border-[#adadad]"
+                  >
+                    <!-- <a href="https://usecheck.com/" class="btn-shine text-8xl" target="_blank">Hello!</a> -->
+                    <!-- <span
                     class="block text-[80px] leading-[80px] text-[#f1ebe5] tracking-0 mx-0 shadow-lg ">Hello!
                   </span> -->
-                  <h1>document<span class="text-white">.<span class="text-[#e06c75]">write</span></span><span
-                      class="text-[#61afef]"></span>("</h1>
-                  <div class="string">
-                    <h1 class="greeting en">Hello World!</h1>
-                    <h1 class="greeting ru">Привет Мир!</h1>
-                    <h1 class="greeting de">Hallo Welt!</h1>
+                    <h1>
+                      document<span class="text-white"
+                        >.<span class="text-[#e06c75]">write</span></span
+                      ><span class="text-[#61afef]"></span>("
+                    </h1>
+                    <div class="string">
+                      <h1 class="greeting en">Hello World!</h1>
+                      <h1 class="greeting ru">Привет Мир!</h1>
+                      <h1 class="greeting de">Hallo Welt!</h1>
+                    </div>
+                    <h1 class="closure">");</h1>
+                  </h3>
+                  <span
+                    class="text-white text-lg font-bold mb-2 text-gray-500 px-8 hidden"
+                  >
+                    <span id="myAge"></span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="flex mt-[-75px] items-center justify-center mb-2">
+              <div id="menu" class="flex border-2 rounded-lg">
+                <a href="https://github.com/iammaga" class="flex">
+                  <div class="px-1 items-center flex my-1">
+                    <img
+                      src="/img/github-5221066.png"
+                      alt=""
+                      width="50"
+                      height="50"
+                      class="rounded-2xl"
+                    />
                   </div>
-                  <h1 class="closure">");</h1>
-                </h3>
-                <span class="text-white text-lg font-bold mb-2 text-gray-500 px-8 hidden">
-                  <span id="myAge"></span>
-                </span>
+                </a>
+                <a href="/vscode.html" class="flex">
+                  <div class="px-1 items-center flex my-1">
+                    <img
+                      src="/img/visual-studio-code.png"
+                      alt=""
+                      width="40"
+                      height="40"
+                      class="rounded-2xl"
+                    />
+                  </div>
+                </a>
+                <a href="https://t.me/Magaa11111" class="flex">
+                  <div class="px-1 items-center flex my-1">
+                    <img
+                      src="/img/telegram1.png"
+                      alt=""
+                      width="44"
+                      height="50"
+                      class="rounded-2xl"
+                    />
+                  </div>
+                </a>
+                <a href="/terminal.html" class="flex">
+                  <div class="px-1 items-center flex my-1">
+                    <img
+                      src="/img/terminal.png"
+                      alt=""
+                      width="50"
+                      height="50"
+                      class="rounded-2xl"
+                    />
+                  </div>
+                </a>
+                <a href="" class="flex">
+                  <div class="px-1 items-center flex my-1">
+                    <img
+                      src="/img/macos_big_sur_download_folder_icon_186042.png"
+                      alt=""
+                      width="50"
+                      height="50"
+                      class="rounded-2xl"
+                    />
+                  </div>
+                </a>
               </div>
-            </div>
-          </div>
-          <div class="flex mt-[-75px] items-center justify-center">
-            <div id="menu" class="flex border-2 rounded-lg">
-              <div class="px-1 items-center flex">
-                <img src="/img/app-store-in-ios.png" alt="" width="50" height="50">
-              </div>
-              <div class="px-1 items-center flex">
-                <img src="/img/ios-photos.png" alt="" width="50" height="50">
-              </div>
-              <div class="px-1 items-center flex">
-                <img src="/img/github-5221066.png" alt="" width="50" height="50">
-              </div>
-              <a href="/vscode.html" class="flex">
-                <div class="px-1 items-center flex">
-                  <img src="/img/visual-studio-code.png" alt="" width="40" height="40">
-                </div>
-              </a>
-              <div class="p-0 items-center flex">
-                <img src="/img/telegram-5528941.png" alt="" width="60" height="50">
-              </div>
-              <a href="/terminal.html" class="flex">
-                <div class="px-1 items-center flex">
-                  <img src="/img/terminal.png" alt="" width="50" height="50">
-                </div>
-              </a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    class="bg-[#5E5F63] bg-gradient-to-b from-[#5E5F63] to-gray-900 border-[#5E5F63] w-100 mx-16 h-14 rounded-b-3xl md:mx-16 sm:mx-16">
-  </div>
-  <script src="/main.js"></script>
-</body>
-
+    <div
+      class="bg-[#5E5F63] bg-gradient-to-b from-[#5E5F63] to-gray-900 border-[#5E5F63] w-100 mx-16 h-14 rounded-b-3xl md:mx-16 sm:mx-16"
+    ></div>
+    <script src="/main.js"></script>
+  </body>
 </html>
