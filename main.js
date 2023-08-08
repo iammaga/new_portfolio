@@ -107,8 +107,3 @@ setTimeout(function () {
   document.getElementById("bg-img").style.display = "block";
   document.getElementById("start").style.display = "none";
 }, 2800); // 2800
-
-setTimeout(function () {
-  document.getElementById("bg-vscode").style.display = "block";
-  document.getElementById("start").style.display = "none";
-}, 2800); // 2800
